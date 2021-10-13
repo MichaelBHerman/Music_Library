@@ -1,6 +1,7 @@
 h1 {
-    /* background-image:\Users\sreik\OneDrive\Desktop\music_library_frontend\Music_Library\src\images\musicnotebackground.jpg; */
+    
     padding-bottom: 0.2 em;
     padding-left: 1 em;
     text-align: center;
+    background-color: cornflowerblue;
 }

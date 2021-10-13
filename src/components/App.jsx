@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import DisplaySongs from './DisplaySongs/DisplaySongs';
 import CreateSong from './CreateSong/CreateSong';
-import DeleteSong from './DeleteSong/DeleteSong';
 import TitleBar from './TitleBar/TitleBar';
 
 class App extends Component {
