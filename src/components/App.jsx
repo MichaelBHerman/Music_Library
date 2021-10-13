@@ -3,6 +3,7 @@ import axios from 'axios';
 import DisplaySongs from './DisplaySongs/DisplaySongs';
 import CreateSong from './CreateSong/CreateSong';
 import DeleteSong from './DeleteSong/DeleteSong';
+import TitleBar from './TitleBar/TitleBar';
 
 class App extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class App extends Component {
 render() { 
     return(
             <div>
+                <TitleBar />
                 <DisplaySongs songs={this.state.songs} removeSong={this.removeSong}/>
                 <CreateSong createSong={this.createSong} />
                 
