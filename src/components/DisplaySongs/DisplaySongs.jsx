@@ -1,10 +1,12 @@
 import React from 'react';
 import DeleteSong from '../DeleteSong/DeleteSong';
+import './DisplaySongs.css';
+
 
 const DisplaySongs = (props) => {
     return ( 
         <div>
-            <table>
+            <table class="border">
                 <thead>
                     <tr>
                         <th>Title</th>
