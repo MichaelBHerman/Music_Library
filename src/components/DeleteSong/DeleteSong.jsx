@@ -28,7 +28,7 @@ const DeleteSong = (props) =>{
 
       return(
         <div>
-          <button onClick={handleClick}>Delete Application</button>
+          <button  className="button-21"onClick={handleClick}>Delete Application</button>
         </div>
       )
 

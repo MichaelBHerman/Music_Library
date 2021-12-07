@@ -4,6 +4,7 @@ import DisplaySongs from './DisplaySongs/DisplaySongs';
 import CreateSong from './CreateSong/CreateSong';
 import TitleBar from './TitleBar/TitleBar';
 import './app.css'
+import FetchRandomQuote from './Quote';
 
 
 class App extends Component {
@@ -62,6 +63,7 @@ render() {
     return(
             <div>
                 <TitleBar />
+                <FetchRandomQuote/>
                 <CreateSong createSong={this.createSong} />
                 <DisplaySongs songs={this.state.songs} removeSong={this.removeSong}/>
                 

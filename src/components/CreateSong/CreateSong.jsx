@@ -41,8 +41,8 @@ class CreateSong extends Component {
    
     render() { 
         return ( 
-            <div class="addsong">
-                <h3>Add Application</h3>
+            <div className="addsong">
+                {/* <h3>Add Application</h3> */}
                 <form class="form" onSubmit={(event) => this.handleSubmit(event)}>
                     <label> Company: </label>
                     <input type="text" name="company" onChange={this.handleChange} value={this.state.company}/>
@@ -60,7 +60,7 @@ class CreateSong extends Component {
                         <option value="Interview" style={{color: "green"}}>Interview</option>
                         <option value="Job Offer" style={{color: "gold"}}>Job Offer</option>
                         <option value="Rejected" style={{color: "red"}}>Rejected</option></select>
-                    <button type="submit" onClick={this.notify}>Submit New Application</button>
+                    <button className="button-21" type="submit" onClick={this.notify}>Submit New Application</button>
                     <ToastContainer/>
              </form>
             </div>
