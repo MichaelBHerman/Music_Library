@@ -7,6 +7,7 @@ const DeleteSong = (props) =>{
     const handleClick = (event) => {  
         deleteSong(props.song)
         newSongList()
+        
     }
 
     function newSongList(){
@@ -27,7 +28,7 @@ const DeleteSong = (props) =>{
 
       return(
         <div>
-          <button onClick={handleClick}>Delete Song</button>
+          <button onClick={handleClick}>Delete Application</button>
         </div>
       )
 

@@ -3,6 +3,8 @@ import axios from 'axios';
 import DisplaySongs from './DisplaySongs/DisplaySongs';
 import CreateSong from './CreateSong/CreateSong';
 import TitleBar from './TitleBar/TitleBar';
+import './app.css'
+
 
 class App extends Component {
   constructor(props) {
@@ -44,14 +46,25 @@ class App extends Component {
           songs : list
          })
       }
+
+      // getNumberOfDays(start, end) {
+      // let firstTime = true;
+      // while true
+      // let counter = 0;
+      // let d = new Date();
+      // let t = new Date();
+      // let day = d.getDate()
+      // let initialDate = t.getDate()
+      //   if(day)
      
 
 render() { 
     return(
             <div>
                 <TitleBar />
-                <DisplaySongs songs={this.state.songs} removeSong={this.removeSong}/>
                 <CreateSong createSong={this.createSong} />
+                <DisplaySongs songs={this.state.songs} removeSong={this.removeSong}/>
+                
                 
               
             </div>

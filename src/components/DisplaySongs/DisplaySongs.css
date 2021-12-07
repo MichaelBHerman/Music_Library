@@ -10,3 +10,8 @@ table {
     padding: 0.5em;
     text-align: left;
 }
+
+.company {
+    font-weight: bold;
+    color: darkblue
+}
