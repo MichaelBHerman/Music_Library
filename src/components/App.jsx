@@ -61,7 +61,7 @@ class App extends Component {
 
 render() { 
     return(
-            <div>
+            <div className="main">
                 <TitleBar />
                 <FetchRandomQuote/>
                 <CreateSong createSong={this.createSong} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import './quote.css';
 
 export default class FetchRandomQuote extends React.Component {
     state = {
@@ -15,8 +16,8 @@ export default class FetchRandomQuote extends React.Component {
         this.setState({author: data[100].author})
 ;    }
     render() {
-        return <div>
-            <h3>"{this.state.quote}"--{this.state.author}</h3>
+        return <div className="quote">
+            <h5>"{this.state.quote}"--{this.state.author}</h5>
             
         </div>;
     }
