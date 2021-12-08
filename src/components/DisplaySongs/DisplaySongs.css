@@ -57,5 +57,10 @@ table {
 }
 
 .button-21:focus:not(:active) {
-  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+  box-shadow: rgba(1, 62, 102, 0.25) 0 0 0 .125em;
+}
+
+th {
+  color: cornflowerblue;
+  font-size: 1.2rem;
 }

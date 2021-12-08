@@ -1,6 +1,14 @@
 import React from 'react';
 import './quote.css';
 
+function getRandomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+let result = getRandomNumber(0, 1000);
+
 export default class FetchRandomQuote extends React.Component {
     state = {
         loading: true,
@@ -12,8 +20,8 @@ export default class FetchRandomQuote extends React.Component {
         const url = "https://type.fit/api/quotes";
         const response = await fetch(url);
         const data = await response.json();
-        this.setState({quote: data[100].text})
-        this.setState({author: data[100].author})
+        this.setState({quote: data[result].text})
+        this.setState({author: data[result].author})
 ;    }
     render() {
         return <div className="quote">
